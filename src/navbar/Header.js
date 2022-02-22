@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import AddIcCallIcon from "@material-ui/icons/AddIcCall";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
@@ -64,6 +65,10 @@ function Header() {
                 {basket?.length}
               </span>
               <Link to="/contacts">
+              <div className="call">
+                  <AddIcCallIcon />
+                   
+                </div>
                 
               </Link>
             </div>
