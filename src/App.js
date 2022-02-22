@@ -7,6 +7,10 @@ import Login from "./Login";
 import Home from "./Home";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import "aos/dist/aos.css";
+import AOS from "aos";
+
+
 
 function App() {
   /* eslint-disable no-unused-vars */
@@ -30,7 +34,7 @@ function App() {
       }
     });
   }, []);
-
+     AOS.init();
     return (
  
     <>
@@ -40,6 +44,7 @@ function App() {
             <Route path="Header" element={<Header />} />
             <Route path="/Login" element={<Login />} />
           <Route path="/Checkout" element={<Checkout />} />
+          {/* <Route path="/Contacts" element={<Contacts />} /> */}
           
         </Routes>
       </Router>
