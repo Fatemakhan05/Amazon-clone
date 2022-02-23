@@ -1,12 +1,15 @@
 import React from "react";
-import Header from "./navbar/Header";
-import Product from "./Product";
 import "./Home.css";
+import Product from "./Product";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Header from "./navbar/Header";
 
 function Home() {
+  AOS.init();
   return (
     <div className="home">
-      <Header />
+      <Header/>
       <div className="home__container">
         <img
           className="home__image"
@@ -38,7 +41,7 @@ function Home() {
         <div
           data-aos="zoom-in-down"
           data-aos-duration="3000"
-          className="home__row"
+           className="home__row"
         >
           <Product
             id="4903850"
@@ -63,11 +66,8 @@ function Home() {
           />
         </div>
 
-        <div
-          data-aos="zoom-in-down"
-          data-aos-duration="3000"
-          className="home__row"
-        >
+        <div data-aos="zoom-in-down"
+          data-aos-duration="3000" className="home__row">
           <Product
             id="90829332"
             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"

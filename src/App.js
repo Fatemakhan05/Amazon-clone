@@ -9,6 +9,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Contacts from "./Contacts";
 
 
 
@@ -44,7 +45,7 @@ function App() {
             <Route path="Header" element={<Header />} />
             <Route path="/Login" element={<Login />} />
           <Route path="/Checkout" element={<Checkout />} />
-          {/* <Route path="/Contacts" element={<Contacts />} /> */}
+           <Route path="/Contacts" element={<Contacts />} /> 
           
         </Routes>
       </Router>
